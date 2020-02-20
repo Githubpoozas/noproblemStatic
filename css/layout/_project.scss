@@ -1,0 +1,107 @@
+//slide 2 ,Our Project
+.swiper-container__slide2 {
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+
+
+    @include respond(large-desktop) {
+        height: 550px;
+    }
+
+    @include respond(tab-land) {
+        height: 350px;
+    }
+
+    // @include respond(tab-port){
+    //     width: 85px;
+    //     height: 85px;
+    // }
+    @include respond(phone) {
+        // 4/2
+        // height: 140px;
+
+        // 5/2
+        height: 140px;
+
+    }
+}
+
+.swiper-wrapper__slide2 {}
+
+.swiper-slide__slide2 {
+
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+    height: 48%;
+
+
+    @include respond(phone) {
+        // width: 60px !important;
+        // height: 60px !important;
+    }
+
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 90%;
+
+        @include respond(large-desktop) {
+            width: 240px;
+            height: 240px;
+        }
+
+        // @include respond(tab-land){
+        //     width: 100px;
+        //     height: 100px;
+        // }
+        // @include respond(tab-port){
+        //     width: 85px;
+        //     height: 85px;
+        // }
+        @include respond(phone) {
+
+            // 4/2
+            // width: 60px;
+            // height: 60px;
+
+            //52
+            width: 50px;
+            height: 50px;
+        }
+
+
+    }
+
+
+
+    &__button-right,
+    &__button-left{
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+}

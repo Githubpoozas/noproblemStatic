@@ -1,0 +1,14 @@
+// Home page
+
+.home__section-swiper {
+    @include horizontalCenter;
+}
+
+.home__section-project {
+    @include horizontalCenter;
+}
+
+.home__section-banner {
+    @include horizontalCenter;
+}
+

@@ -1,0 +1,116 @@
+// Technique page
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+.img1 {
+
+    img {
+        width: 100%;
+    }
+    @include respond(phone){
+       margin-bottom: 10px;
+    }
+}
+
+
+.img3-1 {
+    padding: 0.5rem;
+    img {
+        width: 100%;
+    }
+    @include respond(phone){
+       margin-bottom: 10px;
+    }
+}
+
+.img3-2 {
+    padding: 0.3rem;
+    img {
+        width: 100%;
+    }
+    @include respond(phone){
+       margin-bottom: 10px;
+    }
+}
+
+
+
+.buy {
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    background-image: linear-gradient(to right, #49b848, #10532b);
+  }
+
+  .call {
+    background-image: linear-gradient(to right, #2c368f, #080a22);
+  }
+
+  .btn-buy,
+  .btn-buy:link,
+  .btn-buy:visited {
+    
+    margin: 10px;
+    padding: 3px 17px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-buy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  .btn-buy:active {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transform: translateY(0);
+  }
+
+  .btn-buy--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+  .line:active {
+    background-image: linear-gradient(to left, #49b848, #10532b);
+  }
+
+  .call:active {
+    background-image: linear-gradient(to left, #2c368f, #080a22);
+  }
+
+  @-webkit-keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(3rem);
+              transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(3rem);
+              transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+
+  
